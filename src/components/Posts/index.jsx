@@ -12,10 +12,6 @@ export const Posts = ({ posts = [] }) => {
   );
 };
 
-Posts.defaultProps = {
-  posts: [],
-};
-
 Posts.propTypes = {
   posts: P.arrayOf(
     P.shape({

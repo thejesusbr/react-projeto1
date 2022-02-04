@@ -20,7 +20,7 @@ describe('<TextInput />', () => {
     const input = screen.getByPlaceholderText(/search.../i);
     const value = 'test value';
     userEvent.type(input, value);
-    expect(input.value).toBe('f');
+    expect(input.value).toBe('');
 
     expect(fn).toHaveBeenCalledTimes(value.length);
   });
